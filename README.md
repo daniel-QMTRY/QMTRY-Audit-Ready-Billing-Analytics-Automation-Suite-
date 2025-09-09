@@ -1,5 +1,6 @@
-# QMTRY-Audit-Ready-Billing-Analytics-Automation-Suite-
-Audit-ready AWS billing automation with AI-powered variance explanations, Athena analytics, and QuickSight dashboards — deployable via CDK.
+# 🚀 QMTRY — Revolutionizing Healthcare Billing: Audit-Proof Automation & AI-Powered Insights
+
+**Precision Payments. Crystal-Clear Analytics. AI That Explains Every Discrepancy.**  
 
 [![Build](https://github.com/daniel-QMTRY/QMTRY-Audit-Ready-Billing-Analytics-Automation-Suite/actions/workflows/build.yml/badge.svg)](https://github.com/daniel-QMTRY/QMTRY-Audit-Ready-Billing-Analytics-Automation-Suite/actions/workflows/build.yml)
 [![CDK Deploy](https://github.com/daniel-QMTRY/QMTRY-Audit-Ready-Billing-Analytics-Automation-Suite/actions/workflows/cdk-deploy.yml/badge.svg)](https://github.com/daniel-QMTRY/QMTRY-Audit-Ready-Billing-Analytics-Automation-Suite/actions/workflows/cdk-deploy.yml)
@@ -7,7 +8,6 @@ Audit-ready AWS billing automation with AI-powered variance explanations, Athena
 [![Bedrock Agent](https://img.shields.io/badge/Variance_Explainer-active-success?logo=amazons3&logoColor=white)](https://aws.amazon.com/bedrock/)
 [![HIPAA](https://img.shields.io/badge/HIPAA-audit_ready-teal)](https://www.hhs.gov/hipaa/index.html)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
-
 
 Welcome to the ultimate AWS-powered toolkit for conquering the wild world of healthcare claims, payments, denials, and reconciliations. Designed for payers, providers, and federal health IT warriors, QMTRY isn't just software—it's your secret weapon for turning billing chaos into streamlined, provable success.  
 
@@ -32,17 +32,17 @@ At the heart of QMTRY is a robust, scalable AWS reference architecture that orch
 
 ```mermaid
 flowchart TD
-    A[API Gateway / S3 Ingress Zone] --> B[Step Functions Maestro]
-    B --> C1[Schema Validator Lambda (JSON Schema Enforcement)]
-    C1 --> C2[Adjudication Lambda (Aurora Fee Schedule Integration)]
-    C2 --> Q[SQS Reconciliation Buffer]
-    Q --> P[Persistence Lambda → DynamoDB Vault]
-    P -->|Audit Trails| S3[Secure S3 Layers: Raw / Curated / Gold / Evidence Archives]
-    S3 --> G[Glue ETL + Athena Query Engine]
-    G --> QSight[QuickSight Visualization Hub]
-    S3 --> V[Bedrock Variance AI Agent]
-    V --> R[Automated Executive Narratives & Reports]
-    QSight -->|Interactive Insights| X[Executive Dashboards & Auditor Portals]
+    A["API Gateway / S3 Ingress Zone"] --> B["Step Functions Maestro"]
+    B --> C1["Schema Validator Lambda (JSON Schema Enforcement)"]
+    C1 --> C2["Adjudication Lambda (Aurora Fee Schedule Integration)"]
+    C2 --> Q["SQS Reconciliation Buffer"]
+    Q --> P["Persistence Lambda → DynamoDB Vault"]
+    P -->|Audit Trails| S3["Secure S3 Layers: Raw / Curated / Gold / Evidence Archives"]
+    S3 --> G["Glue ETL + Athena Query Engine"]
+    G --> QSight["QuickSight Visualization Hub"]
+    S3 --> V["Bedrock Variance AI Agent"]
+    V --> R["Automated Executive Narratives & Reports"]
+    QSight -->|Interactive Insights| X["Executive Dashboards & Auditor Portals"]
     style A fill:#f9f,stroke:#333
     style S3 fill:#ff9,stroke:#333
     style QSight fill:#9ff,stroke:#333
@@ -181,5 +181,3 @@ Drop us a line at 💌 contracts@qmtry.ai
 Explore more at 🌐 https://qmtry.ai  
 
 This isn't just a repository—it's your launchpad to a future where billing is brilliant, audits are effortless, and every penny tells a story. Deploy QMTRY today and redefine what's possible in healthcare finance. 🚀
-
-``
