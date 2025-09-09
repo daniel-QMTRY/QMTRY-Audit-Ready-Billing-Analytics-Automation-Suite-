@@ -1,9 +1,9 @@
 # 🚀 QMTRY — Revolutionizing Healthcare Billing: Audit-Proof Automation & AI-Powered Insights
 
-**Precision Payments. Crystal-Clear Analytics. AI That Explains Every Discrepancy.**  
+**Precision Payments. Crystal-Clear Analytics. AI That Explains Every Discrepancy.**
 
-[![Build](https://github.com/daniel-QMTRY/QMTRY-Audit-Ready-Billing-Analytics-Automation-Suite/actions/workflows/build.yml/badge.svg)](https://github.com/daniel-QMTRY/QMTRY-Audit-Ready-Billing-Analytics-Automation-Suite/actions/workflows/build.yml)
-[![CDK Deploy](https://github.com/daniel-QMTRY/QMTRY-Audit-Ready-Billing-Analytics-Automation-Suite/actions/workflows/cdk-deploy.yml/badge.svg)](https://github.com/daniel-QMTRY/QMTRY-Audit-Ready-Billing-Analytics-Automation-Suite/actions/workflows/cdk-deploy.yml)
+[![Build](https://github.com/daniel-QMTRY/qmtry-billing-suite/actions/workflows/build.yml/badge.svg)](https://github.com/daniel-QMTRY/qmtry-billing-suite/actions/workflows/build.yml)
+[![CDK Deploy](https://github.com/daniel-QMTRY/qmtry-billing-suite/actions/workflows/cdk-deploy.yml/badge.svg)](https://github.com/daniel-QMTRY/qmtry-billing-suite/actions/workflows/cdk-deploy.yml)
 [![AWS](https://img.shields.io/badge/AWS-ready-orange?logo=amazon-aws&logoColor=white)](https://aws.amazon.com/solutions/)
 [![Bedrock Agent](https://img.shields.io/badge/Variance_Explainer-active-success?logo=amazons3&logoColor=white)](https://aws.amazon.com/bedrock/)
 [![HIPAA](https://img.shields.io/badge/HIPAA-audit_ready-teal)](https://www.hhs.gov/hipaa/index.html)
@@ -162,6 +162,25 @@ Pro Tip: Customize with your AWS account details and watch the magic unfold. Ful
 - **Immutable Records** → S3 Object Lock ensures audit evidence can't be altered.  
 - **Full Auditability** → CloudTrail and Config capture every action for complete traceability.  
 - **HIPAA Harmony** → Built on proven patterns to meet healthcare's stringent standards.
+
+### 📊 HITRUST Control Matrix (Visual)
+
+```mermaid
+graph TD
+    A[HIPAA / HITRUST Safeguards] --> B[Administrative]
+    A --> C[Physical]
+    A --> D[Technical]
+    B --> B1[Risk Analysis<br/>CloudFormation + Tags]
+    B --> B2[Least Privilege IAM<br/>Deploy vs Runtime]
+    B --> B3[OIDC Workforce Security]
+    C --> C1[Media Disposal<br/>S3 Lifecycle & Object Lock]
+    C --> C2[Facility Access<br/>AWS SOC2/HITRUST Inherited]
+    D --> D1[Encryption at Rest<br/>S3, DynamoDB, Aurora KMS]
+    D --> D2[Transmission Security<br/>API Gateway TLS]
+    D --> D3[Audit Controls<br/>CloudWatch Logs + S3 Evidence]
+    D --> D4[Authentication<br/>OIDC Federation]
+    D --> D5[Access Control<br/>Scoped Runtime Roles]
+```
 
 ---
 
