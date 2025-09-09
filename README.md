@@ -182,8 +182,4 @@ Explore more at 🌐 https://qmtry.ai
 
 This isn't just a repository—it's your launchpad to a future where billing is brilliant, audits are effortless, and every penny tells a story. Deploy QMTRY today and redefine what's possible in healthcare finance. 🚀
 
-```
-
-
-Would you like me to also prepare a **GitHub repo badge set** (build passing, CDK deploy, Bedrock agent active, etc.) to dress up the README header?
-```
+``
